@@ -10,8 +10,8 @@ echo.
 echo ================================================================
 echo.
 echo.
-
-"C:\Program Files\Python39\python.exe" n5_update.py
+cd C:\Users\lcarv\OneDrive\repos_git\ModelingAndUpdate_GISData\0_scripts
+"C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" n5_update.py
 
 echo Fecha:%date%
 echo Hora:%time%

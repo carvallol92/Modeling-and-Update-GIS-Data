@@ -10,8 +10,8 @@ echo.
 echo ================================================================
 echo.
 echo.
-cd C:\carga_inpe2020\0_scripts
-"C:\Program Files\Python39\python.exe" n7_update.py
+cd C:\Users\lcarv\OneDrive\repos_git\ModelingAndUpdate_GISData\0_scripts
+"C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" n7_update.py
 
 echo Fecha:%date%
 echo Hora:%time%

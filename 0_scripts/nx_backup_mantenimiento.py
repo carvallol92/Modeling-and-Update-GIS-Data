@@ -11,6 +11,12 @@ import ast
 from arcgis import GIS
 from arcgis import features
 
+list_month = ['Enero','Febrero','Marzo','Abril',
+            'Mayo','Junio','Julio','Agosto',
+            'Septiembre','Octubre','Noviembre','Diciembre'         
+           ]
+
+           
 def delete_data(input_user,table,year,month):
     
     global Nx_service
@@ -203,13 +209,22 @@ def user_operation():
         delete_year = input('Ingrese año que desea borrar: ')
         delete_month = input('Ingrese mes que desea borrar: ')
         
-        delete_data(input_user,delete_table,delete_year,delete_month)                  
-                   
-                
+        if delete_month in list_month and len(delete_year) == 4:
+        
+            delete_data(input_user,delete_table,delete_year,delete_month)
+    
+        else:
+        
+            print('')
+            print('Hay errores en la carga de Mes o Año, por favor vuelve a intentarlo...')
+            
+            user_operation()           
+                                  
+                                   
     elif input_user == '2':
     
         print('')
-        print('Usted ha seleccionado Borrar Decargar Respaldo')
+        print('Usted ha seleccionado Decargar Respaldo')
             
         donwload_data()                    
        
